@@ -14,6 +14,7 @@ body {
   background-color: black;
   color: white;
 }
+
 nav {
   display: flex;
   background-color: beige;
@@ -37,6 +38,7 @@ nav ul li a {
 }
  nav .logo {
   font-family: 'Dancing Script', cursive;
+  color: purple;
   letter-spacing: 4px;
   font-size: 30px;
  }
@@ -211,6 +213,7 @@ text-decoration: none;
  nav ul {
   display: none;
  }
+
  .main h1 {
   font-size: 20px
 }
