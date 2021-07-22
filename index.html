@@ -4,51 +4,92 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evie S Aprilia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
-  
+    <script src="app.js" defer></script>
+
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="Image/logo21.png" width="100" height="65">
-        </div>
-  
-        <div class="header-right">
-          <a href="#">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">PRODUCT</a>
-          <a href="#">CONTACT</a>
-        </div>
+    <button onclick="myFunction()">Dark/Light</button>
+      <nav>
+      <div class="logo">
+        <h1><a href="index.html">KasiKado.ByV</a></h1>
       </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+   </header>
+   
+    <div class="main">
         <h1>MAKE YOUR OWN GIFT</h1>
         <h1>LET'S GET YOURS</h1>
       </div>
-   <section class="ABOUT">
-     <div class="container">
-        <h3>ABOUT</h3>
-        <p>KasiKado.byV merupakan tempat pembuatan hadiah yang berupa gift box dan gift bucket. Varian isi mulai dari snack, skincare, pakaian dan sebagainya yang dapat disesuaikan dari budget customers.</p>
-    </div>
-    </section>
-  <section class="PRODUCT">
+   <div class="section">
+        <p>KasiKado.byV is a place for making gifts like gift boxes and gift buckets. Variants of contents ranging from snacks, skincare, clothes and so on that can be adjusted from the customer's budget.</p>
+        <span class="btn learn">Learn More</span>
+  </div>
+  <div class="contents-wrapper">
    <div class="contents">
-        <h3 class="section-title">PRODUCT</h3>
+        <h3 class="section-title">Let's See Our Craft</h3>
+        
         <div class="contents-item">
-          <img src="Image/img1.jpeg" width="120" height="120">
-          <p>GIFT BOX</p>
+          <img src="Image/img1.jpeg" width="120" height="120" >
+          <p>Mix Box</p>
         </div>
         <div class="contents-item">
           <img src="Image/img2.jpeg" width="120" height="120">
-          <p>BUCKET MONEY</p>
+          <p>Bucket Money</p>
         </div>
         <div class="contents-item">
           <img src="Image/img3.jpeg" width="120" height="120">
-          <p>BUCKET SKINCARE</p>
+          <p>Bucket Skincare</p>
         </div>
-      </section>
+        <div class="contents-item">
+          <img src="Image/img4.jpeg" width="120" height="120">
+          <p>Hijab Box</p>
+        </div>
+        <div class="contents-item">
+          <img src="Image/img5.jpeg" width="120" height="120">
+          <p>Skincare Box</p>
+        </div>
+        <div class="contents-item">
+          <img src="Image/img6.jpeg" width="120" height="120">
+          <p>Snacks Box</p>
+        </div>
+    </div>
+  </div>
+    <div class="footer-wrapper">
+        <h1>Contact Us</h1>
+
+        <p>Don't miss out our sales and special events. Sign up your account by email and save 10% on your next order!</p>
+        <form action="" class="contact-form">
+          <input type="text" name="txt" placeholder="Enter Your Email">
+         <input type="submit" class="button" value="submit">
+          </form>
+        </div>
+       
+        <div class="footer">
+          <img src="Image/logo21.png" alt="" class="gambar">
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+            <p class="right-text">2021 Created By Evie S Aprilia All Right Reserved.</p>
+          
+        
   </body>
 </html>
 

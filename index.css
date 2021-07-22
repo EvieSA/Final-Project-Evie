@@ -1,96 +1,225 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
 }
 
 body {
-  margin: 0;
   font-family: "Lucida Grande";
   background-color: beige;
 }
 
-a {
-  text-decoration: none;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-header {
-  height: 65px;
-  width: 100%;
+nav {
+  display: flex;
   background-color: beige;
+  justify-content: space-around;
+  padding: 20px 0;
   color: purple;
-  position :fixed;
-  top: 0;
-  z-index: 10;
+  height: 60px;
+  align-items: center;
 }
 
-.logo {
-  width: 80px;
-  
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between; 
 }
-
-.header-left {
-  float: left;
- 
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
+nav ul li a {
   color: purple;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 15px;
 }
+ nav .logo {
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 4px;
+  font-size: 30px;
+ }
 
-.header-right a:hover {
+nav ul li a:hover {
   background-color: #b85cff;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  background-color: beige;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: purple;
+  border-radius: 10px;
+}
+
+.main {
+  padding: 100px 0 100px 0;
   background-image: url(Image/giftpurple.jpg);
   background-size: cover;
   color: beige;
   text-align: center;
-  height: 65vh;
-  background-position: -70px;
+  height: 80px;
+  background-position: -100px;
 
 }
 
-.top-wrapper h1 {
+.main h1 {
   opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
-section {
+.section {
   padding: 30px 0;
+  text-align: center;
 
 }
-section h3 {
-  text-align: center;
-  color: purple;
+
+.section p {
   font-size: 30px;
+  color: purple;
+  font-family: 'Indie Flower', cursive;
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+
 }
-section p {
-  font-size: 20px;
+.btn {
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 24px;
+padding-right: 24px;
+color: beige;
+display: inline-block;
+opacity: 0.8;
+text-decoration: none;
+
+}
+.btn:hover {
+  opacity: 1;
+}
+.learn {
+  background-color: purple;
+  padding: 15px 40px;
+  cursor:pointer;
+  box-shadow: 0 7px beige;
+  
+}
+.contents {
+  text-align: center;
   color: purple;
 }
 .contents-item {
   float: left;
-  margin-right: 40px;
+  margin: auto;
+  padding: 20px;
+  width: 400px;
   
 }
+.section-title {
+  border-bottom: 1px solid  #da70d6;
+  font-size: 28px;
+  padding-bottom: 15px;
+  
+ }
+
+.contents-item p {
+  font-family: 'Indie Flower', cursive;
+}
+
+.footer-wrapper h1 {
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+  color: purple;
+  height: auto;
+}
+.footer-wrapper p {
+  font-size: 20px;
+  color: purple;
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+}
+.contact-form {
+  padding: 20px;
+}
+
+.button {
+  padding: 5px 10px;
+  font-size: 13px;
+  color: beige;
+  background: purple;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+.button:hover {
+  opacity: .7;
+}
+
+.gambar {
+  width: 100px;
+}
+.social {
+  margin-bottom: 10px;
+}
+.social a {
+  color: purple;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+.social a:hover {
+  color: purple;
+}
+
+
+.footer {
+  background-image: url(Image/mountain.jpg);
+  color: purple;
+}
+/* For Tablets */
+@media screen and (max-width: 1000px) {
+  nav ul {
+    width: 50%;
+  }
+  }
+
+
+/* For Smartphones */
+@media screen and (max-width: 670px) {
+ .menu-toggle {
+  display: flex;
+ }
+ nav ul {
+  display: none;
+ }
+ .main h1 {
+  font-size: 20px
+}
+.button {
+  text-align: center;
+}
+.contact-form {
+  text-align: center;
+
+}
+}
+
